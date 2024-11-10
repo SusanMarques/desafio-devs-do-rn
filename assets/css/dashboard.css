@@ -101,20 +101,33 @@ body {
     color: #A0A6B1; 
     opacity: 0.8;
 }
-.botao-salvar{
+
+.botao, .botao-salvar {
     display: block;
     margin: 10px 0;
     padding: 8px;
     width: 80%;
-    border-radius: 1px;
+    border-radius: 4px;
     font-size: 16px;
     color: #ffffff;
     background-color: #1B213E;
     text-align: center;
-    text-decoration: none; 
+    text-decoration: none;
     border: none;
     font-family: "Titillium Web", sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.botao:hover, .botao-salvar:hover {
+    background-color: #2D3A58; /* Cor de fundo mais clara ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento leve */
+}
+
+.botao:active, .botao-salvar:active {
+    background-color: #1B213E; /* Volta para a cor original ao clicar */
+    transform: scale(1); /* Remove o efeito de escala ao clicar */
+}
+
 .conteudo-principal {
     margin-left: 320px; /* Espaço para o menu lateral */
     padding-top: 120px; /* Espaço para o menu superior */
@@ -136,4 +149,237 @@ body {
     font-weight: 600;
     font-style: normal;
     font-size: 17px;
+    display: flex;
+    justify-content: center;
+}
+/* ------------------------------ css para cadastrar associados */
+
+/* Estilo geral do formulário */
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Titillium Web", sans-serif;
+}
+
+/* Estilo dos rótulos */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #111025;
+}
+
+/* Estilo dos inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Titillium Web", sans-serif;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus {
+    border-color: #1B213E;
+    outline: none;
+}
+
+/* Estilo do botão de submit */
+form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #1B213E;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form button[type="submit"]:hover {
+    background-color: #2D3A58;
+    transform: scale(1.05);
+}
+
+form button[type="submit"]:active {
+    background-color: #1B213E;
+    transform: scale(1);
+}
+
+
+/* -------------------------- página de processar associados */
+.mensagem-sucesso{
+    margin-top: 20px;
+    padding: 10px; 
+    background-color: #f0f0f0;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    color:#111025;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul padrão */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-voltar:hover {
+    background-color: #0056b3; /* Tom mais escuro para o hover */
+    transform: scale(1.05);
+}
+
+.btn-voltar:active {
+    background-color: #003d80; /* Tom ainda mais escuro ao clicar */
+    transform: scale(1);
+}
+
+/* ---------------------------- css página listar associados */
+
+.tabela-associados {
+    width: 90%; /* Largura de 90% para dar espaço nas laterais */
+    margin: 20px auto; /* Centraliza a tabela e adiciona uma margem superior */
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    font-family: "Titillium Web", sans-serif;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para margens e preenchimento */
+.tabela-associados th,
+.tabela-associados td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Cabeçalho da tabela */
+.tabela-associados thead th {
+    background-color: #0F1634;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Estilos adicionais para hover */
+.tabela-associados tbody tr:hover {
+    background-color: #f1f5fa;
+}
+
+/* Margem para a área geral */
+.container-tabela {
+    padding: 20px; /* Margem interna para toda a área da tabela */
+}
+/* Estilos para os botões de ações */
+.botao-acao {
+    padding: 6px 10px;
+    margin: 0 5px;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: "Titillium Web", sans-serif;
+}
+
+/* Estilo do botão de editar */
+.botao-acao.editar {
+    background-color: #1B213E; /* Azul escuro */
+}
+
+.botao-acao.editar:hover {
+    background-color: #2A52E6; /* Tom mais claro para hover */
+}
+
+/* Estilo do botão de excluir */
+.botao-acao.excluir {
+    background-color: #E63946; /* Vermelho */
+}
+
+.botao-acao.excluir:hover {
+    background-color: #C22D3B; /* Tom mais escuro para hover */
+}
+
+/* Estilos para o status */
+.status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.status.pendente {
+    background-color: #F4B400; /* Amarelo para Pendente */
+}
+
+.status.pago {
+    background-color: #34A853; /* Verde para Pago */
+}
+
+/* Estilização da área de pesquisa */
+/* Estilização da área de pesquisa */
+.container-pesquisa {
+    display: flex;
+    justify-content: center; /* Alinha a barra de pesquisa no centro */
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%; /* Garante que o contêiner ocupe toda a largura da página */
+}
+
+.container-pesquisa input[type="text"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.botao-buscar {
+    padding: 8px 16px;
+    background-color: #2A52E6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-buscar:hover {
+    background-color: #1a3cb0;
+}
+
+
+
+
+/* Para garantir que o conteúdo ocupe toda a largura da tela em telas menores */
+@media (max-width: 768px) {
+    .tabela-associados {
+        font-size: 14px;
+    }
 }

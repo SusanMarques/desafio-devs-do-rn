@@ -23,7 +23,7 @@ $pass = getenv('DB_PASS');
 $bd = getenv('DB_NAME');
 
 // Conectar ao banco de dados
-if (mysqli_connect($server, $user, $pass, $bd)) {
+if ($conn = mysqli_connect($server, $user, $pass, $bd)) {
     echo "Conectado com sucesso!";
 } else {
     echo "Erro ao conectar ao banco";

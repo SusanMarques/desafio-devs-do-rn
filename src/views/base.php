@@ -19,13 +19,13 @@ function renderContent($content)
     <body>
         <header class="menu-superior">
             <div class="logo">
-                <a href="dashboard.php">
-                    <img src="../../assets/images/logo.png" alt="Logo da associacao" class="logo-img">
+                <a href="/devs_rn_mysql/src/views/dashboard.php">
+                    <img src="/devs_rn_mysql/assets/images/logo.png" alt="Logo da associacao" class="logo-img">
                 </a>
             </div>
             <div class="usuario">
-                <a href="../../public/login.php" class="login-btn">
-                    <img src="../../assets/icons/user-icon.svg" alt="Logo da associacao" class="icone-login">
+                <a href="/devs_rn_mysql/public/login.php" class="login-btn">
+                    <img src="/devs_rn_mysql/assets/icons/user-icon.svg" alt="Logo da associacao" class="icone-login">
                 </a>
             </div>
         </header>
@@ -34,8 +34,8 @@ function renderContent($content)
             <div class="gerenciar-associados">
                 <h3>Gerenciar Associados</h3>
                 <div>
-                    <a href="listar_associados.php" class="botao">Listar</a>
-                    <a href="cadastrar_associado.php" class="botao">Cadastrar</a>
+                    <a href="/devs_rn_mysql/src/views/listar_associados.php" class="botao">Listar</a>
+                    <a href="/devs_rn_mysql/src/views/cadastrar_associado.php" class="botao">Cadastrar</a>
                 </div>
             </div>
             <hr class="separator">
