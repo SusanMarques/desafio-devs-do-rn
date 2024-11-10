@@ -155,7 +155,7 @@ body {
 /* ------------------------------ css para cadastrar associados */
 
 /* Estilo geral do formulário */
-form {
+form.formulario-cadastro {
     width: 100%;
     max-width: 500px;
     margin: 20px auto;
@@ -167,7 +167,7 @@ form {
 }
 
 /* Estilo dos rótulos */
-form label {
+form.formulario-cadastro label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -175,9 +175,10 @@ form label {
 }
 
 /* Estilo dos inputs */
-form input[type="text"],
-form input[type="email"],
-form input[type="date"] {
+form.formulario-cadastro input[type="text"],
+form.formulario-cadastro input[type="email"],
+form.formulario-cadastro input[type="date"],
+form.formulario-cadastro input[type="search"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -188,17 +189,20 @@ form input[type="date"] {
     color: #333;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
+    
 }
 
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form input[type="date"]:focus {
+form.formulario-cadastro input[type="text"]:focus,
+form.formulario-cadastro input[type="email"]:focus,
+form.formulario-cadastro input[type="date"]:focus,
+form.formulario-cadastro input[type="search"]:focus {
     border-color: #1B213E;
     outline: none;
 }
 
+
 /* Estilo do botão de submit */
-form button[type="submit"] {
+form.formulario-cadastro button[type="submit"] {
     width: 100%;
     padding: 12px;
     background-color: #1B213E;
@@ -212,16 +216,15 @@ form button[type="submit"] {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-form button[type="submit"]:hover {
+form.formulario-cadastro button[type="submit"]:hover {
     background-color: #2D3A58;
     transform: scale(1.05);
 }
 
-form button[type="submit"]:active {
+form.formulario-cadastro button[type="submit"]:active {
     background-color: #1B213E;
     transform: scale(1);
 }
-
 
 /* -------------------------- página de processar associados */
 .mensagem-sucesso{
@@ -338,40 +341,6 @@ form button[type="submit"]:active {
 
 .status.pago {
     background-color: #34A853; /* Verde para Pago */
-}
-
-/* Estilização da área de pesquisa */
-/* Estilização da área de pesquisa */
-.container-pesquisa {
-    display: flex;
-    justify-content: center; /* Alinha a barra de pesquisa no centro */
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%; /* Garante que o contêiner ocupe toda a largura da página */
-}
-
-.container-pesquisa input[type="text"] {
-    padding: 8px 12px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-right: 10px;
-    width: 250px;
-}
-
-.botao-buscar {
-    padding: 8px 16px;
-    background-color: #2A52E6;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.botao-buscar:hover {
-    background-color: #1a3cb0;
 }
 
 

@@ -4,7 +4,7 @@ require_once 'base.php';
 $content = <<<HTML
     <h3>Dashboard</h3>
     <h2>Cadastrar Associado</h2>
-    <form action="../controllers/processar_cadastro.php" method="POST">
+    <form class="formulario-cadastro" action="../controllers/processar_cadastro.php" method="POST">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
         

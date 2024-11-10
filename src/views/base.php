@@ -1,4 +1,14 @@
 <?php
+session_start();
+
+
+if (!isset($_SESSION['anoAnuidade'])) {
+    $_SESSION['anoAnuidade'] = date('Y'); 
+}
+if (!isset($_SESSION['valorAnuidade'])) {
+    $_SESSION['valorAnuidade'] = 100.00; 
+}
+
 function renderContent($content)
 {
     ?>
@@ -43,12 +53,11 @@ function renderContent($content)
                 <h3>Gerenciar Anuidades</h3>
                 <div>
                     <h3>Selecione o ano:</h3>
-                    <input list="anos" name="anoAnuidade" id="anoAnuidade" class="input" placeholder="Digite o ano">
+                    <input list="anos" name="anoAnuidade" id="anoAnuidade" class="input" placeholder="Digite o ano"
+                           value="<?php echo $_SESSION['anoAnuidade']; ?>" required>
                     <datalist id="anos">
                         <?php
                         $anoAtual = date("Y");
-
-                        // Exibir os últimos 5 anos no topo
                         for ($ano = $anoAtual; $ano > $anoAtual - 10; $ano--) {
                             echo "<option value='$ano'>$ano</option>";
                         }
@@ -56,15 +65,16 @@ function renderContent($content)
                     </datalist>
 
                     <h3>Valor da anuidade:</h3>
-                    <input type="number" id="valorAnuidade" class="input" placeholder="Digite o valor da anuidade">
+                    <input type="number" id="valorAnuidade" name="valorAnuidade" class="input" placeholder="Digite o valor da anuidade"
+                           value="<?php echo $_SESSION['valorAnuidade']; ?>" required>
                     <button class="botao-salvar">Salvar</button>
                 </div>
-
             </div>
         </nav>
 
         <main class="conteudo-principal">
-            <?php echo $content; // Aqui será colocado o conteúdo da página ?>
+            <?php echo $content; 
+             ?>
         </main>
     </body>
 

@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `anuidade` (
   `id` int(11) NOT NULL,
-  `ano` date NOT NULL,
+  `ano` year(4) NOT NULL,
   `valor` decimal(6,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
