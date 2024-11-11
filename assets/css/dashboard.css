@@ -343,7 +343,20 @@ form.formulario-cadastro button[type="submit"]:active {
     background-color: #34A853; /* Verde para Pago */
 }
 
+.mensagem {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 10px;
+    border: 1px solid #d6e9c6;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
 
+.mensagem p {
+    margin: 0;
+}
 
 
 /* Para garantir que o conteúdo ocupe toda a largura da tela em telas menores */

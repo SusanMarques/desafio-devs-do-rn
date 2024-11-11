@@ -3,10 +3,10 @@ session_start();
 
 
 if (!isset($_SESSION['anoAnuidade'])) {
-    $_SESSION['anoAnuidade'] = date('Y'); 
+    $_SESSION['anoAnuidade'] = date('Y');
 }
 if (!isset($_SESSION['valorAnuidade'])) {
-    $_SESSION['valorAnuidade'] = 100.00; 
+    $_SESSION['valorAnuidade'] = 100.00;
 }
 
 function renderContent($content)
@@ -41,6 +41,8 @@ function renderContent($content)
         </header>
 
         <nav class="menu-lateral">
+            <a href="/devs_rn_mysql/src/views/dashboard.php" class="botao">Home</a>
+
             <div class="gerenciar-associados">
                 <h3>Gerenciar Associados</h3>
                 <div>
@@ -50,11 +52,10 @@ function renderContent($content)
             </div>
             <hr class="separator">
             <div class="gerenciar-anuidades">
-                <h3>Gerenciar Anuidades</h3>
-                <div>
+                <form method="POST" action="/devs_rn_mysql/src/controllers/cadastrar_anuidade_controller.php">
                     <h3>Selecione o ano:</h3>
                     <input list="anos" name="anoAnuidade" id="anoAnuidade" class="input" placeholder="Digite o ano"
-                           value="<?php echo $_SESSION['anoAnuidade']; ?>" required>
+                        value="<?php echo date('Y'); ?>" required>
                     <datalist id="anos">
                         <?php
                         $anoAtual = date("Y");
@@ -65,19 +66,21 @@ function renderContent($content)
                     </datalist>
 
                     <h3>Valor da anuidade:</h3>
-                    <input type="number" id="valorAnuidade" name="valorAnuidade" class="input" placeholder="Digite o valor da anuidade"
-                           value="<?php echo $_SESSION['valorAnuidade']; ?>" required>
-                    <button class="botao-salvar">Salvar</button>
-                </div>
+                    <input type="number" id="valorAnuidade" name="valorAnuidade" class="input"
+                        placeholder="Digite o valor da anuidade" value="100.00" required>
+                    <button type="submit" class="botao-salvar">Salvar</button>
+                </form>
+
             </div>
         </nav>
 
         <main class="conteudo-principal">
-            <?php echo $content; 
-             ?>
+            <?php echo $content;
+            ?>
         </main>
     </body>
 
     </html>
     <?php
 }
+?>
