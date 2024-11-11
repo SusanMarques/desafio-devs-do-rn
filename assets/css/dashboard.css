@@ -306,6 +306,7 @@ form.formulario-cadastro button[type="submit"]:active {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     font-family: "Titillium Web", sans-serif;
+    text-decoration: none;
 }
 
 /* Estilo do botão de editar */
@@ -325,7 +326,9 @@ form.formulario-cadastro button[type="submit"]:active {
 .botao-acao.excluir:hover {
     background-color: #C22D3B; /* Tom mais escuro para hover */
 }
-
+.botao-acao.detalhar{
+    background-color: #1B213E;
+}
 /* Estilos para o status */
 .status {
     padding: 5px 10px;

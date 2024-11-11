@@ -17,17 +17,17 @@ $dados = mysqli_query($conn, $sql);
 
 if ($dados && mysqli_num_rows($dados) > 0) {
     while ($linha = mysqli_fetch_assoc($dados)) {
-        
-        $associadoId = $linha['id']; 
+
+        $associadoId = $linha['id'];
         $sqlPagamento = "SELECT * FROM pagamento WHERE associadoid = $associadoId";
         $dadosPagamento = mysqli_query($conn, $sqlPagamento);
 
-        
-        $status = 'Pago'; 
+
+        $status = 'Pago';
         $pendente = false;
         while ($pagamento = mysqli_fetch_assoc($dadosPagamento)) {
             if ($pagamento['pago'] == 0) {
-                $pendente = true; 
+                $pendente = true;
                 break;
             }
         }
@@ -36,13 +36,17 @@ if ($dados && mysqli_num_rows($dados) > 0) {
             $status = 'Pendente';
         }
 
-       
+
         $conteudoTabela .= "<tr>
             <td>{$linha['nome']}</td>
             <td>{$linha['CPF']}</td>
             <td>{$linha['email']}</td>
             <td>{$linha['datadefiliacao']}</td>
-            <td><button class='botao-acao detalhar'>Detalhar</button></td>
+           <td>
+                <a href='/devs_rn_mysql/src/controllers/detalhar_associado_controller.php?id={$associadoId}' class='botao-acao detalhar'>
+                    Detalhar
+                </a>
+            </td>
             <td>$status</td>
         </tr>";
     }

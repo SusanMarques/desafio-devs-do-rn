@@ -14,8 +14,8 @@ $content = <<<HTML
         <label for="Email">Email:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="Datadefiliacao">Data de filiação:</label>
-        <input type="date" id="data_filiacao" name="datadefiliacao" required>
+        <label for="datadefiliacao">Data de Filiação:</label>
+        <input type="date" name="datadefiliacao" max="<?= date('Y-m-d'); ?>" required><br>
         
         <button type="submit">Cadastrar</button>
     </form>
