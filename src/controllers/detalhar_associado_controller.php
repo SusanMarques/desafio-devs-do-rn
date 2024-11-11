@@ -77,7 +77,7 @@ foreach ($anosDevido as $ano) {
             <td>
                 <form method='POST' action=''>
                     <input type='hidden' name='anuidadeId' value='$anuidadeId'>
-                    <button type='submit' name='pagar' " . ($pago == 1 ? "disabled" : "") . ">Pagar</button>
+                    <button type='submit' class='botao-acao pagar' name='pagar' " . ($pago == 1 ? "disabled" : "") . ">Pagar</button>
                 </form>
             </td>
         </tr>";

@@ -310,7 +310,9 @@ form.formulario-cadastro button[type="submit"]:active {
 }
 
 /* Estilo do botão de editar */
-.botao-acao.editar {
+.botao-acao.editar , 
+.botao-acao.detalhar,
+.botao-acao.pagar{
     background-color: #1B213E; /* Azul escuro */
 }
 
@@ -326,9 +328,9 @@ form.formulario-cadastro button[type="submit"]:active {
 .botao-acao.excluir:hover {
     background-color: #C22D3B; /* Tom mais escuro para hover */
 }
-.botao-acao.detalhar{
-    background-color: #1B213E;
-}
+
+
+
 /* Estilos para o status */
 .status {
     padding: 5px 10px;

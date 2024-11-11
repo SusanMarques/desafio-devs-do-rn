@@ -55,10 +55,9 @@ if ($dados && mysqli_num_rows($dados) > 0) {
 }
 
 $content = <<<HTML
-    <h3>Dashboard</h3>
     <div>
-        <form class="formulario-pesquisa" method="POST" action="listar_associados.php">
-            <input type="text" id="pesquisa" name="busca" placeholder="Pesquisar..." value="$pesquisa">
+        <form class="formulario-cadastro" method="POST" action="listar_associados.php">
+            <input type="text" id="pesquisa" name="busca" placeholder="Pesquisar associado" value="$pesquisa">
             <button type="submit" class="botao-buscar">Pesquisar</button>
         </form>
     </div>

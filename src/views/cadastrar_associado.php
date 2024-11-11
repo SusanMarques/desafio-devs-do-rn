@@ -2,7 +2,6 @@
 require_once 'base.php';
 
 $content = <<<HTML
-    <h3>Dashboard</h3>
     <h2>Cadastrar Associado</h2>
     <form class="formulario-cadastro" action="../controllers/processar_cadastro.php" method="POST">
         <label for="nome">Nome:</label>

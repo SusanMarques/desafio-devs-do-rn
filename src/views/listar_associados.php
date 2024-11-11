@@ -8,10 +8,9 @@ $pesquisa = isset($_POST['busca']) ? $_POST['busca'] : '';
 $conteudoTabela = include "../controllers/listar_associados_controller.php";
 
 $content = <<<HTML
-    <h3>Dashboard</h3>
     <h2>Listar Associados</h2>
     <div>
-        <form class="formulario-pesquisa" method="POST" action="listar_associados.php">
+        <form class="formulario-cadastro" method="POST" action="listar_associados.php">
             <input type="text" id="pesquisa" name="busca" placeholder="Pesquisar..." value="$pesquisa">
             <button type="submit" class="botao-buscar">Pesquisar</button>
         </form>
