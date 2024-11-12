@@ -7,10 +7,10 @@
 O sistema também permite o acompanhamento detalhado da situação financeira de cada associado, considerando a data de filiação para determinar quais anuidades são devidas e possibilitando que o pagamento de cada ano seja realizado individualmente. Dessa forma, o gerente consegue identificar de forma rápida e prática quais associados estão com os pagamentos em dia e quais estão em atraso. ".
 
 [![Autor](https://img.shields.io/badge/SusanMarques-SusanMarques-ff9000?style=flat-square)](https://github.com/SusanMarques)
-[![Languages](https://img.shields.io/github/languages/count/desafio-devs-do-rn?color=%23ff9000&style=flat-square)](#)
-[![Stars](https://img.shields.io/github/stars/desafio-devs-do-rn?color=ff9000&style=flat-square)](https://github.com/desafio-devs-do-rn/stargazers)
-[![Forks](https://img.shields.io/github/forks/desafio-devs-do-rn?color=%23ff9000&style=flat-square)](https://github.com/desafio-devs-do-rn/network/members)
-[![Contributors](https://img.shields.io/github/contributors/desafio-devs-do-rn?color=ff9000&style=flat-square)](https://github.com/desafio-devs-do-rn/graphs/contributors)
+[![Languages](https://img.shields.io/github/languages/count/SusanMarques/desafio-devs-do-rn?color=%23ff9000&style=flat-square)](#)
+[![Stars](https://img.shields.io/github/stars/SusanMarques/desafio-devs-do-rn?color=ff9000&style=flat-square)](https://github.com/desafio-devs-do-rn/stargazers)
+[![Forks](https://img.shields.io/github/forks/SusanMarques/desafio-devs-do-rn?color=%23ff9000&style=flat-square)](https://github.com/desafio-devs-do-rn/network/members)
+[![Contributors](https://img.shields.io/github/SusanMarques/contributors/desafio-devs-do-rn?color=ff9000&style=flat-square)](https://github.com/desafio-devs-do-rn/graphs/contributors)
 
 # :pushpin: Sumario deste projeto
 
@@ -59,6 +59,10 @@ O sistema também permite o acompanhamento detalhado da situação financeira de
     <img src="/assets/images/cadastrar-manual-de-uso-e-design-interface.jpg" /> 
 </p>
 
+# Protótipo das telas no Figma
+
+Para o desenvolvimento desse sistema foi feita a prototipação das telas no Figma, [clique aqui para visualizar](https://www.figma.com/design/WhO4aATTZRTQtx8HfFzpCH/prot%C3%B3tipo-gest%C3%A3o-de-associados?node-id=0-1&t=8Z43tNUxCh7EpKNN-1)
+
 # :construction_worker: Guia de instalação
 
 # Guia de Instalação do Projeto para a Associação Devs do RN
@@ -78,6 +82,7 @@ Certifique-se de ter o **PHP** , o **MYSQL** e o **GIT** instalados em sua máqu
      git clone https://github.com/SusanMarques/desafio-devs-do-rn.git
      ```
    - Navegue até o diretório do projeto:
+     ```
      cd desafio-devs-do-rn
      ```
      
@@ -108,7 +113,10 @@ Certifique-se de ter o **PHP** , o **MYSQL** e o **GIT** instalados em sua máqu
      ```bash
      php -S localhost:8000
      ```
-- usando XAMPP, coloque o projeto dentro do diretório htdocs e acesse no navegador: http://localhost/nome_do_projeto.
+- usando XAMPP, coloque o projeto dentro do diretório htdocs e acesse no navegador: ex: 
+    ```
+    http://localhost/devs_do_rn.
+    ```
 
 ### Observação
 1. Verifique se as credenciais no .env correspondem às configuradas no MySQL.
@@ -118,6 +126,10 @@ Certifique-se de ter o **PHP** , o **MYSQL** e o **GIT** instalados em sua máqu
 **Pergunta:** Quais tecnologias foram utilizadas neste projeto?
 
 **Resposta:** As tecnologias utilizadas são: [PHP](https://www.php.net/) ,[MySQL](https://www.apachefriends.org/pt_br/index.html) via XAMPP, [GIT](https://git-scm.com/) e [APACHE](https://www.apachefriends.org/pt_br/index.html) via XAMPP
+
+# Metodo ágil 
+
+Para a realização do projeto foi utilizado o método ágil Kanban por meio dos cartões do Trello, organizando as funcionalidades no backlog e movendo os cartões a cada tarefa finalizada para concluída. também ficou registrado o checklist das funcionalidades finalizadas e das que ficaram como melhorias futuras. [Kanban no trello](https://trello.com/invite/b/672a5d691c1d2a6b833d4cf9/ATTIf4728619a237f47e79d59bc9558c51aa235CB38C/kanban-projeto-associacao-devs-do-rn)
 
 # :bug: Bugs
 
