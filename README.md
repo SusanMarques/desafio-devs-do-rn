@@ -148,4 +148,4 @@ Sinta-se à vontade para **registrar um novo problema** com o respectivo título
 # :closed_book: Licença
 
 Lançado em 2024.
-Este projeto esta sob a licença [MIT license](https://github.com/desafio-devs-do-rn/blob/master/LICENSE).
+Este projeto esta sob a licença [MIT license](https://github.com/SusanMarques/desafio-devs-do-rn/blob/master/LICENSE).
