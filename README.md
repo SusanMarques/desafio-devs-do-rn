@@ -10,7 +10,7 @@ O sistema também permite o acompanhamento detalhado da situação financeira de
 [![Languages](https://img.shields.io/github/languages/count/SusanMarques/desafio-devs-do-rn?color=%23ff9000&style=flat-square)](#)
 [![Stars](https://img.shields.io/github/stars/SusanMarques/desafio-devs-do-rn?color=ff9000&style=flat-square)](https://github.com/desafio-devs-do-rn/stargazers)
 [![Forks](https://img.shields.io/github/forks/SusanMarques/desafio-devs-do-rn?color=%23ff9000&style=flat-square)](https://github.com/desafio-devs-do-rn/network/members)
-[![Contributors](https://img.shields.io/github/SusanMarques/contributors/desafio-devs-do-rn?color=ff9000&style=flat-square)](https://github.com/desafio-devs-do-rn/graphs/contributors)
+[![Contributors](https://img.shields.io/github/contributors/SusanMarques/desafio-devs-do-rn?color=ff9000&style=flat-square)](https://github.com/desafio-devs-do-rn/graphs/contributors)
 
 # :pushpin: Sumario deste projeto
 
